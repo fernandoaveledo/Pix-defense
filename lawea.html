@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pix defensa</title>
+    <link rel="stylesheet" href="normal.css">
+    <link rel="stylesheet" href="esqueleto.css">
+    <link rel="stylesheet" href="estilos.css">
+
+<body>
+
+    <header class="header rosa">
+        <div class="container">
+            <div class="row norotes">
+                    <h1 id="titulazo"><img id="gato" width="10%" height="10%" src="img/logo.jpeg" alt="">PIX DEFENSE</h1> 
+                <div class="two columns u-pull-right carrisho ">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" alt="">
+                            <div id="carrito">
+                                <p class="vacio">Tu carrito </p>
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Producto</th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       
+                                    </tbody>
+                                </table>
+                                <a id="vaciar-carrito" href="#" class="button u-full-width">vaciar carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container"> 
+            <div class="row">  
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h2>Defenderse es importante</h2>
+                        <p>¿No está el producto que necesitas? ¡Sugerilo!</p>
+                        <form>
+                            <input class="u-full-width" type="text" placeholder="¿Que te gustaria sugerir?" id="buscador">
+                            <input type="submit" class="submit-buscador"> <br> <br>
+                            <button type="submit" id="buscar" onclick="getValueInput()">BUSCAR</button>
+                            <br> <br>
+                            <p id="valueInput"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="">
+                <div id="1st" class="four columns icono icono1">
+                    <p>PIX <br> DEFENSE</p>
+                </div>
+                <div id="2nd" class="four columns icono icono2">
+                    <p>No dudes más.<br>
+                    Invertí en tu seguridad.</p>
+                </div>
+                <div id="3rd" class="four columns icono icono3">
+                    <p class="superCentro">PIX <br> DEFENSE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="lista-productos" class="container">
+        <h1 class="encabezado">Pedidos en linea</h1>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/gaspi.jpg" class="imagen- u-full-width">
+                    <div class="info-card">
+                        <h4>Gas pimienta</h4>
+                        <p>Está diseñado para inflamar las membranas mucosas de los ojos, la nariz, la garganta y los pulmones, causando una sensación de ardor muy doloroso, lagrimeo continuo, tos incontrolable, ahogo, nauseas y desorientación</p>
+                        <p>Trae 110ml, y tiene un vencimiento de 5 años</p>
+                        <p class="precio">$1000 <span class="u-pull-right">$800</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img height="80%" src="img/kubotan.jpg" class="imagen- u-full-width">
+                    <div class="info-card">
+                        <h4>Kubotan</h4>
+                        <p>El kubotan es un arma de defensa personal japonesa hecha de un plástico resistente, funciona para romper vidrios y defenderse en caso de necesitarlo</p>
+                        
+                        <p class="precio">$350 <span class="u-pull-right">$300</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img height="80%" src="img/pinches.jpg" class=" u-full-width">
+                    <div class="info-card">
+                        <h4>Manopla</h4>
+                        <p>te pincha en ciertos lugares</p>
+                        
+                        <p class="precio">$150 <span class="u-pull-right">$100</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- delivery -->
+<div class="container"></div>
+    <div class="section">
+        <br>
+        <button class="btn blanquito" id="botonn"> Ver precios</button>
+
+        <table class="u-full-width blanquito">
+            <thead>
+              <tr>
+                <th>Locación</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody id="res">
+              <tr>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+</div>
+
+
+
+
+
+    <footer class="footer"> 
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <nav class="menu">
+                        <a class="enlace" href="#">Pedidos a domicilio en toda Argentina</a>
+                        <a class="enlace" href="#">Stock en linea</a>
+                        <a class="enlace" href="#">Pedidos por telefono</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav class="menu">
+                        <a class="enlace" href="#">Instagram</a>
+                        <a class="enlace" href="#">Facebook</a>
+                        <a class="enlace" href="#">Whatsapp</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./jsPix.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+</body>
+</html>
